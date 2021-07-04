@@ -132,6 +132,9 @@
     </Reference>
     <Reference Include="BeatSaberCinema">
       <HintPath>$(BeatSaberDir)\Plugins\BeatSaberCinema.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\BeatSaberCinema\BeatSaberCinema\bin\Debug\BeatSaberCinema.dll')">..\..\..\BeatSaberCinema\BeatSaberCinema\bin\Debug\BeatSaberCinema.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\BeatSaberCinema\BeatSaberCinema\bin\Release\BeatSaberCinema.dll')">..\..\..\BeatSaberCinema\BeatSaberCinema\bin\Release\BeatSaberCinema.dll</HintPath>
+      <HintPath Condition="Exists('$(BeatSaberDir)\Plugins\BeatSaberCinema.dll')">$(BeatSaberDir)\Plugins\BeatSaberCinema.dll</HintPath>
     </Reference>
   </ItemGroup>
 
